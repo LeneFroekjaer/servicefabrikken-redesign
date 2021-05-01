@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 function init(){
     hentHeader();
+    hentFooter();
 }
 
 // HEADEREN + BURGERMENUEN
@@ -11,7 +12,7 @@ function hentHeader() {
     fetch("header.html")
       .then(headerfil => headerfil.text())
       .then(header => {
-        document.querySelector("[data-header]").innerHTML = header;
+        document.querySelector(".header").innerHTML = header;
         getBurger() // Får burgermenuen til at virke.
       });
   }
@@ -25,3 +26,13 @@ function hentHeader() {
   document.querySelector(".burger").classList.toggle("change");
   document.querySelector("nav").classList.toggle("show");
   }
+
+  // HEADEREN + BURGERMENUEN
+// Her hentes indeholdet af headeren fra header.html til de andre sider og sætter det ind i headeren.
+function hentFooter() {
+  fetch("footer.html")
+    .then(footerfil => footerfil.text())
+    .then(footer => {
+      document.querySelector(".footer").innerHTML = footer;
+    });
+}
