@@ -4,6 +4,7 @@
 3. HEADER
 4. FOOTER
 5. MAIN
+6. FORSIDE
 */
 
 /* ======
@@ -21,7 +22,7 @@ body {
   /*få footer ned i bunden af siden*/
   position: relative;
   min-height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 
 /* ======
@@ -33,6 +34,74 @@ nav a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
+  color: #131313;
+}
+
+footer p {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #808080;
+}
+
+footer a {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #808080;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #131313;
+}
+
+h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #131313;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #131313;
+}
+
+/* BUTTON */
+
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #c82e32;
+  background-color: #fafafa;
+  text-decoration: none;
+  border: 1px solid #c82e32;
+
+  text-align: center;
+  padding: 5px 40px;
+  width: 150px;
+  border-radius: 360px;
+  margin: 25px auto;
+  display: block;
+}
+
+/* HOVER LINKS */
+
+nav a:hover,
+footer a:hover {
+  color: #c82e32;
+}
+
+.button:hover {
+  color: #fafafa;
+  background-color: #c82e32;
 }
 
 /* ======
@@ -42,18 +111,17 @@ nav a {
 .header {
   position: fixed;
   top: 0;
+  z-index: 3;
 }
 
 /* NAVIGATION */
 nav {
   position: fixed;
   width: 100vw;
-  z-index: 2;
+  z-index: 3;
   padding: 15px;
 }
 nav a {
-  color: #131313;
-
   display: inline;
   position: relative;
   padding: 7px;
@@ -146,16 +214,10 @@ nav a {
   left: 15px;
   top: 10px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 4;
 }
 .logo img {
   width: 250px;
-}
-
-/* HOVER LINKS */
-
-nav a:hover {
-  color: #c82e32;
 }
 
 /* ======
@@ -166,14 +228,18 @@ nav a:hover {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height: 100px;
+  height: 150px;
 
   background-color: #131313;
   color: #fafafa;
-  text-align: end;
+
   padding: 15px;
 }
 
+.footer-right {
+  text-align: end;
+  padding-top: 15px;
+}
 /* ======
     5. MAIN
     ====== */
@@ -181,4 +247,32 @@ nav a:hover {
 main {
   padding-top: 75px;
   padding-bottom: 15px;
+}
+
+/* ======
+    6. FORSIDE
+    ====== */
+
+#sec-title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#sec-imageandtext {
+  position: relative;
+}
+
+#sec-imageandtext img {
+  width: 100vw;
+}
+
+.white-box {
+  background-color: #fafafad5;
+  width: 100vw;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
 }
