@@ -159,7 +159,7 @@ nav a {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    z-index: 3;
+    z-index: 4;
   }
 
   .bar1,
