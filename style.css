@@ -247,6 +247,8 @@ nav a {
 
 main {
   padding-top: 75px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 /* ======
@@ -269,6 +271,7 @@ main {
 
 #sec-imageandtext img {
   width: 100vw;
+  max-width: 1440px;
 }
 
 .white-box {
@@ -312,7 +315,7 @@ main {
     ====== */
 
 #sec-about {
-  padding-top: 50px;
+  padding: 50px 0;
   margin: 0 20px;
 }
 
@@ -324,6 +327,9 @@ main {
 .aboutimage {
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  width: 80vw;
+  max-width: 400px;
 }
 
 .aboutimage img {
@@ -331,9 +337,22 @@ main {
   max-width: 400px;
 }
 
-@media screen and (min-width: 880px) {
+.aboutimage:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80%;
+  width: 80vw;
+  max-width: 400px;
+  background-color: #aaaaaa;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1025px) {
   #sec-about {
     display: flex;
+    gap: 20px;
   }
   .abouttext .button {
     margin: 25px 0;
