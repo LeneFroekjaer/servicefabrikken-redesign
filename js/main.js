@@ -9,7 +9,7 @@ function init(){
 // HEADEREN + BURGERMENUEN
 // Her hentes indeholdet af headeren fra header.html til de andre sider og sætter det ind i headeren.
 function hentHeader() {
-    fetch("header.html")
+    fetch("./header.html")
       .then(headerfil => headerfil.text())
       .then(header => {
         document.querySelector(".header").innerHTML = header;
@@ -30,7 +30,7 @@ function hentHeader() {
   // HEADEREN + BURGERMENUEN
 // Her hentes indeholdet af headeren fra header.html til de andre sider og sætter det ind i headeren.
 function hentFooter() {
-  fetch("footer.html")
+  fetch("./footer.html")
     .then(footerfil => footerfil.text())
     .then(footer => {
       document.querySelector(".footer").innerHTML = footer;

@@ -292,9 +292,22 @@ main {
   text-align: center;
 }
 
-#sec-services img {
+#sec-services .drawing {
   width: 50vw;
   padding-top: 50px;
+}
+
+.service {
+  margin: 10px 0;
+}
+
+.service img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.service p {
+  display: inline-block;
 }
 
 @media screen and (min-width: 550px) {
@@ -303,7 +316,7 @@ main {
     text-align: center;
     display: flex;
   }
-  #sec-services img {
+  #sec-services .drawing {
     width: 30vw;
     max-width: 200px;
     padding-top: 0px;
