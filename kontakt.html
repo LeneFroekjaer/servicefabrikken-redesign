@@ -20,12 +20,17 @@
     <main>
         <!-- <section id="sec-contact"> -->
             <form method="POST" action="/service12besked.php">
+                <label for="f_navn">Navn</label>
                 <input type="text" name="navn" id="f_navn" >
+                <label for="f_email">E-mail</label>
                 <input type="email" name="email" id="f_email" >
+                <label for="f_telnr">Telefon nummer</label>
                 <input type="tel" name="telnr" id="f_telnr">
+                <label for="f_emne">Emne</label>
                 <input type="text" name="emne" id="f_emne">
+                <label for="f_besked">Besked</label>
                 <textarea name="besked" id="f_besked" cols="30" rows="10"></textarea>
-                <button type="submit">Send</button>
+                <input type="submit" value="Send">
             </form>
         <!-- </section> -->
     </main>
