@@ -18,8 +18,16 @@
 <body>
     <div class="header"></div>
     <main>
-        <section id="sec-contact">
-        </section>
+        <!-- <section id="sec-contact"> -->
+            <form method="POST" action="/service12besked.php">
+                <input type="text" name="navn" id="f_navn" >
+                <input type="email" name="email" id="f_email" >
+                <input type="tel" name="telnr" id="f_telnr">
+                <input type="text" name="emne" id="f_emne">
+                <textarea name="besked" id="f_besked" cols="30" rows="10"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        <!-- </section> -->
     </main>
     <footer class="footer"></footer>
     <script src="js/main.js"></script>

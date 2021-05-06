@@ -288,7 +288,7 @@ main {
 /* SECTION SERVICES */
 
 #sec-services {
-  padding-top: 50px;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -313,9 +313,11 @@ main {
 @media screen and (min-width: 550px) {
   #sec-services {
     padding-top: 50px;
-    text-align: center;
+    text-align: left;
     display: flex;
+    justify-content: space-around;
   }
+
   #sec-services .drawing {
     width: 30vw;
     max-width: 200px;
