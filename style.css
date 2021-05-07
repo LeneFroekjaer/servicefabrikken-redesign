@@ -6,6 +6,7 @@
 5. MAIN
 6. FORSIDE
 7. OM-SIDE
+8. KONTAKT-SIDE
 */
 
 /* ======
@@ -74,7 +75,7 @@ p {
   color: #131313;
 }
 
-/* BUTTON */
+/* BUTTONS */
 
 .button {
   font-family: "Oswald", sans-serif;
@@ -91,6 +92,16 @@ p {
   border-radius: 360px;
   margin: 25px auto;
   display: block;
+}
+
+/* FORM */
+
+label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #131313;
+  margin: 10px 0;
 }
 
 /* HOVER LINKS */
@@ -372,4 +383,43 @@ main {
   .abouttext .button {
     margin: 25px 0;
   }
+}
+
+/* ======
+    8. KONTAKT-SIDE
+    ====== */
+#sec-contact {
+  padding: 50px 50px;
+}
+#sec-contact h1 {
+  margin-bottom: 15px;
+}
+.contactform {
+  max-width: 400px;
+  margin: 0 auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+form .button {
+  margin: 25px 0;
+}
+input:not(.button) {
+  border-radius: 50px;
+  border: 1px solid #808080;
+  padding: 10px;
+}
+textarea {
+  border-radius: 20px;
+  border: 1px solid #808080;
+  padding: 10px;
+  resize: none;
+}
+
+input:not(.button):focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 3px 1px #c82e32;
 }
