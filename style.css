@@ -54,6 +54,14 @@ footer a {
   text-decoration: none;
 }
 
+.contacttext a {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #131313;
+  text-decoration: none;
+}
+
 h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 45px;
@@ -107,7 +115,8 @@ label {
 /* HOVER LINKS */
 
 nav a:hover,
-footer a:hover {
+footer a:hover,
+.contacttext a:hover {
   color: #c82e32;
 }
 
@@ -422,4 +431,40 @@ input:not(.button):focus,
 textarea:focus {
   outline: none;
   box-shadow: 0 0 3px 1px #c82e32;
+}
+.required {
+  color: #c82e32;
+}
+.contactinfo {
+  width: 80vw;
+  max-width: 400px;
+  margin: 25px auto 0 auto;
+  text-align: center;
+}
+
+.contacttext {
+  margin-bottom: 25px;
+}
+
+.contactinfo img {
+  max-width: 300px;
+}
+
+@media screen and (min-width: 1025px) {
+  #sec-contact {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+  .contactform {
+    width: 40vw;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .contactinfo {
+    width: 40vw;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
 }
