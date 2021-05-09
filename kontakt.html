@@ -21,18 +21,18 @@
         <section id="sec-contact">
             <div class="contactform">
                 <h1>Kontakt mig</h1>
-                <form method="POST" action="/service12besked.php">
+                <form method="POST" action="/service12besked.php" novalidate>
                     <label for="f_navn">Navn <span class="required">*</span></label>
-                    <input type="text" name="navn" id="f_navn" >
+                    <input type="text" name="navn" id="f_navn" required><span class="error"></span>
                     <label for="f_email">E-mail <span class="required">*</span></label>
-                    <input type="email" name="email" id="f_email" >
+                    <input type="email" name="email" id="f_email" required><span class="error"></span>
                     <label for="f_telnr">Telefon nummer</label>
                     <input type="tel" name="telnr" id="f_telnr">
                     <label for="f_emne">Emne</label>
                     <input type="text" name="emne" id="f_emne">
                     <label for="f_besked">Besked</label>
                     <textarea name="besked" id="f_besked" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Send" class="button">
+                    <input type="submit" value="Send" class="button" name="submit">
                 </form>
             </div>
             <div class="contactinfo">
@@ -48,5 +48,6 @@
     </main>
     <footer class="footer"></footer>
     <script src="js/main.js"></script>
+    <script src="js/kontakt.js"></script>
 </body>
 </html>

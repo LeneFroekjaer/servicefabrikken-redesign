@@ -435,6 +435,16 @@ textarea:focus {
 .required {
   color: #c82e32;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: 1px solid #c82e32;
+  -webkit-text-fill-color: #131313;
+  -webkit-box-shadow: 0 0 0px 1000px #cfcfcf inset;
+  box-shadow: 0 0 0px 1000px #cfcfcf inset;
+}
+
 .contactinfo {
   width: 80vw;
   max-width: 400px;
@@ -468,3 +478,35 @@ textarea:focus {
     text-align: left;
   }
 }
+
+/* VALIDATION */
+
+input:invalid {
+  border-color: red;
+  background-color: rgb(255, 182, 182);
+}
+input:focus:invalid {
+  outline: none;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  color: #fafafa;
+  background-color: #131313;
+  border-radius: 0 0 5px 5px;
+}
+
+.error .active {
+  padding: 15px;
+}
+
+/* #f_navn + .error::after {
+  content: "Skriv dit navn ovenover";
+  color: #c82e32;
+}
+
+#f_email + .error::after {
+  content: "Skriv din e-mail ovenover";
+  color: #c82e32;
+} */
