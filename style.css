@@ -112,6 +112,12 @@ label {
   margin: 10px 0;
 }
 
+.error {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 /* HOVER LINKS */
 
 nav a:hover,
@@ -149,7 +155,6 @@ nav a {
   background-color: transparent;
 
   cursor: pointer;
-  transition: 1s;
 }
 
 /* BURGERMENU */
@@ -481,11 +486,11 @@ input:-webkit-autofill:focus {
 
 /* VALIDATION */
 
-input:invalid {
+.check:invalid {
   border-color: red;
-  background-color: rgb(255, 182, 182);
 }
-input:focus:invalid {
+
+.check:focus:invalid {
   outline: none;
 }
 
@@ -494,19 +499,8 @@ input:focus:invalid {
   padding: 0;
   color: #fafafa;
   background-color: #131313;
-  border-radius: 0 0 5px 5px;
 }
 
 .error .active {
   padding: 15px;
 }
-
-/* #f_navn + .error::after {
-  content: "Skriv dit navn ovenover";
-  color: #c82e32;
-}
-
-#f_email + .error::after {
-  content: "Skriv din e-mail ovenover";
-  color: #c82e32;
-} */
