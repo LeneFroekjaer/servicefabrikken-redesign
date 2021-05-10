@@ -302,12 +302,20 @@ main {
 .white-box {
   background-color: #fafafad5;
   width: 100vw;
+  max-width: 1440px;
   height: 150px;
   position: absolute;
   bottom: 0;
   z-index: 2;
   text-align: center;
   padding: 20px;
+}
+
+@media screen and (min-width: 1250px) {
+  .white-box {
+    height: 225px;
+    padding: 60px;
+  }
 }
 
 /* SECTION SERVICES */
@@ -451,7 +459,7 @@ input:-webkit-autofill:focus {
 }
 
 .contactinfo {
-  width: 80vw;
+  width: 70vw;
   max-width: 400px;
   margin: 25px auto 0 auto;
   text-align: center;
@@ -462,6 +470,7 @@ input:-webkit-autofill:focus {
 }
 
 .contactinfo img {
+  width: 70vw;
   max-width: 300px;
 }
 

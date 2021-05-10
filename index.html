@@ -24,7 +24,11 @@
             <a href="#sec-services" class="button">Ydelser</a>
         </section>
         <section id="sec-imageandtext">
-            <img src="images/vogn.png" alt="Stefan ved siden af firmavogn">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/vogn_small.jpg">
+                <source media="(min-width: 501px)" srcset="images/vogn_large.png">
+                <img src="images/vogn_large.png" alt="Stefan ved siden af firmavogn">
+            </picture>
             <div class="white-box">
                 <p>Hej, mit navn er Stefan. Jeg har kunder rundt om i Nordsjælland.</p>
                 <a href="om.html" class="button">Om mig</a>
