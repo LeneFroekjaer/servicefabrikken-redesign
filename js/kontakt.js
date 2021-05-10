@@ -10,6 +10,7 @@ const navnError = document.querySelector("#f_navn + span.error")
 function init(){
     email.addEventListener("input", validateEmail);
     navn.addEventListener("input", validateNavn);
+    form.addEventListener("submit", submitForm)
 }
 
 function validateEmail(){
@@ -36,4 +37,12 @@ function validateNavn(){
         navnError.className = "error active";
         navn.style.borderRadius = "25px 25px 0 0"
     }
+}
+
+function submitForm(e){
+    if (!email.validity.valid || !navn.validity.valid){
+        e.preventDefault();
+        validateEmail()
+        validateNavn()
+    } 
 }
