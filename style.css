@@ -81,6 +81,13 @@ p {
   font-size: 16px;
   font-weight: 300;
   color: #131313;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 
 /* BUTTONS */
@@ -426,7 +433,7 @@ form {
   margin: 0 auto;
 }
 form .button {
-  margin: 25px 0;
+  margin: 25px auto;
 }
 input:not(.button) {
   border-radius: 50px;
@@ -485,6 +492,11 @@ input:-webkit-autofill:focus {
     max-width: 400px;
     margin: 0 auto;
   }
+
+  form .button {
+    margin: 25px 0;
+  }
+
   .contactinfo {
     width: 40vw;
     max-width: 400px;
