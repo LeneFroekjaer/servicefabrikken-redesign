@@ -8,5 +8,5 @@
     $til="lene_frkjr@yahoo.dk";
 
     mail($til, "besked fra $navn: $emne", $besked, "Content-type:text/html; charset=utf-8\r\nfrom: $email");
-    header("location: service12tak.html");
+    header("location: tak.html");
 ?>
