@@ -3,10 +3,11 @@
     $navn=$_REQUEST['navn'];
     $telnr=$_REQUEST['telnr'];
     $emne=$_REQUEST['emne'];
-    $besked="<p style='font-family: sans-serif; font-size:18px; color:black'>".$_REQUEST['besked']."</p>";
+    $besked=nl2br("<p style='font-family: sans-serif; font-size:18px; color:black'>"."fra: ".$_REQUEST['besked']."\r\n"."fra: "."\r\n".$navn."\r\n".$telnr."\r\n".$email."</p>");
 
     $til="lene_frkjr@yahoo.dk";
+    $fra="lenefroekjaer@lenefroekjaer.dk";
 
-    mail($til, "besked fra $navn: $emne", $besked, "Content-type:text/html; charset=utf-8\r\nfrom: $email");
+    mail($til, $emne, $besked, "Content-type:text/html; charset=utf-8\r\nfrom: $fra");
     header("location: tak.html");
 ?>
